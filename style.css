@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.gridgallery{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    gap: 20px;
+}
+.griditem{
+    background-color: cadetblue;
+}
+.griditem:nth-child(2){
+    grid-column: span 2;
+}
+.griditem:nth-child(3)
+.griditem:nth-child(4){
+    grid-row: span 2;
+}
+.griditem :nth-child(5)
+.griditem :nth-child(7){
+    grid-row: span 2;
+}
+
+.griditem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
